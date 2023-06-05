@@ -24,12 +24,12 @@
 24. Kalo sudah selesai dalam membuat tabel, line 3 dan 9 pada "index.js" bisa dicomment 
 25. Buat sub-folder baru dengan nama "controllers", lalu buat file baru didalam sub-folder "models" dengan nama "Users.js"
 26. Lalu tambahkan line 1 sampai line 10 pada "Users.js"
-27. Buat sub-folder baru dengan nama "routers", lalu buat file baru didalam sub-folder "models" dengan nama "index.js"
-28. Lalu tambahkan line 1 sampai line 8 pada "index.js" pada sub-folder "routers"
+27. Buat sub-folder baru dengan nama "routes", lalu buat file baru didalam sub-folder "models" dengan nama "index.js"
+28. Lalu tambahkan line 1 sampai line 8 pada "index.js" pada sub-folder "routes"
 29. Tambahkan line 4, 15 dan 16 pada file "index.js"
 30. Lalu kita uji dengan extension VS Code dengan nama "Rest Client" atau aplikasi "Postman", saat ini saya coba pake extension dari VS Code "Rest Client"
 31. Lalu bikin file pengujian pada API yang dibuat, dengan cara buat file baru dengan nama "request.rest" pada folder "backend"
-32. Lalu ketik pada file "request.rest" seperti ini "GET http://localhost:5000/users", lalu klik "send request", maka akan ada seperti dibawah ini. Berati API yang kita buat dengan "/users" berhasil. Silahkan dibuat API yang lain sesuai tabel yang buat.
+32. Lalu ketik pada file "request.rest" seperti ini "GET http://localhost:5000/users", lalu klik "send request", maka akan ada seperti dibawah ini. Berati API yang kita buat dengan GET "/users" berhasil. Silahkan dibuat API yang lain sesuai tabel yang buat.
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
@@ -39,3 +39,19 @@ Date: Mon, 05 Jun 2023 08:07:53 GMT
 Connection: close
 
 []
+33. Selanjutkan kita akan buat function untuk register pada "controllers" file "Users.js"
+34. Lalu tambahkan line 2 dan line 12 sampai line 30, lalu kita edit file "index.js" yang terdapat pada sub-folder "routes"
+35. Tambahkan "tambahUser" pada line 2, kemudian tambahkan seperti line 7
+36. Jika sudah kita akan coba test API yang kita buat barusan pada file "request.rest"
+37. Lalu tambahkan dari line 2 sampai line 14, lalu klik "send request", maka akan ada seperti dibawah ini. Berati API yang kita buat dengan POST "/users" berhasil. Silahkan dibuat API yang lain sesuai tabel yang buat. Dan cek pada tabel dalam database apakah nambah atau tidak.
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 38
+ETag: W/"26-6rEk4hx1B7vxVEP2g6G2MC/4lyo"
+Date: Mon, 05 Jun 2023 11:56:15 GMT
+Connection: close
+
+{
+  "msg": "Data users berhasil disimpan"
+}

@@ -1,7 +1,7 @@
 import express from "express";
 import db from "./config/Database.js";
 // import Users from "./models/UsersModel.js";
-import router from "./routers/index.js";
+import router from "./routes/index.js";
 const app = express();
 
 try {
