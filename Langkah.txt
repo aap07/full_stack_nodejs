@@ -1,0 +1,41 @@
+1. Buat folder project disini saya pake nama "Full-Stack"
+2. Lalu buat sub-folder dengan nama "backend"
+3. Lalu masuk kedalam sub-folder tersebut dari terminal
+4. Buat "package.json" dengan perintang "npm init" pada terminal
+5. Instal dependencies yang dibutuhkan "npm install express mysql2 sequelize jsonwebtoken dotenv bcrypt cookie-parser cors"
+6. Lalu tambahkan "type" dibawah "main" dan isi "type" dengan "module"
+7. Lalu install nodemon secara global dengan perintah "npm install -g nodemon"
+8. Kalo sudah selesai instalasi, silahakan cek versi nodemon kalian dengan perintah "nodemon --version"
+9. Lalu buat file dengan nama "index.js" didalam sub-folder "backend"
+10. Lalu tambahkan teks dari line 1 sampai line 4 pada file index.js
+11. Lalu jalankan programan dengan menggunakan nodemon "nodemon index"
+12. Jika muncul tulisan "server berjalan pada port 5000", itu berati program berhasil dibuat
+13. Lalu buat database dengan nama "db_full_stack"
+14. Buat sub-folder baru dengan nama "config", lalu buat file baru dengan nama "Database.js"
+15. Tambahkan dari line 1 sampai dengan 8
+16. Kemudian import file yang kita buat tadi pada file "index.js"
+17. Tambahakan line 2, dan line 5 sampai line 10 pada file "index.js"
+18. Lalu lihat terminal jika ada tulisan "Database terkoneksi dengan baik" berarti semua berjalan lancar atau koneksi ke database berhasil
+19. Buat sub-folder baru dengan nama "models", lalu buat file baru didalam sub-folder "models" dengan nama "UsersModel.js"
+20. Lalu tambahkan line 1 sampai line 32 pada "UsersModel.js"
+21. Lalu sesuaikan file "index.js", tambahkan line 9 terlebih dahulu dan line 3 selanjutnya
+22. Kemudian jika berhasil otomatis didalam db_full_stack akan terbuat sebuah tabel dengan nama "users"
+23. Jadi ketika ingin membuat tabel baru line 3 dan line 9 pada "index.js" bisa disesuaikan dengan tabel yang ingin dibuat
+24. Kalo sudah selesai dalam membuat tabel, line 3 dan 9 pada "index.js" bisa dicomment 
+25. Buat sub-folder baru dengan nama "controllers", lalu buat file baru didalam sub-folder "models" dengan nama "Users.js"
+26. Lalu tambahkan line 1 sampai line 10 pada "Users.js"
+27. Buat sub-folder baru dengan nama "routers", lalu buat file baru didalam sub-folder "models" dengan nama "index.js"
+28. Lalu tambahkan line 1 sampai line 8 pada "index.js" pada sub-folder "routers"
+29. Tambahkan line 4, 15 dan 16 pada file "index.js"
+30. Lalu kita uji dengan extension VS Code dengan nama "Rest Client" atau aplikasi "Postman", saat ini saya coba pake extension dari VS Code "Rest Client"
+31. Lalu bikin file pengujian pada API yang dibuat, dengan cara buat file baru dengan nama "request.rest" pada folder "backend"
+32. Lalu ketik pada file "request.rest" seperti ini "GET http://localhost:5000/users", lalu klik "send request", maka akan ada seperti dibawah ini. Berati API yang kita buat dengan "/users" berhasil. Silahkan dibuat API yang lain sesuai tabel yang buat.
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+ETag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+Date: Mon, 05 Jun 2023 08:07:53 GMT
+Connection: close
+
+[]
